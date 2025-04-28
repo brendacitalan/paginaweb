@@ -17,13 +17,26 @@
         </div>
         <nav id="menu" class="desplegable">
             <ul>
-                <li><a href="ace.html">Inicio</a></li>
-                <li><a href="ace.html">Galeria</a></li>
-                <li><a href="ace.html">Proyectos</a></li>
-                <li><a href="ace.html">Contactanos</a></li>
+                <li><a href="inicio.html">Inicio</a></li>
+                <li><a href="galeria.html">Galeria</a></li>
+                <li><a href="ubicacion.html">Ubicaciones</a></li>
+                <li><a href="contactanos.html">Contactanos</a></li>
             </ul>
         </nav>
     </header>
-    <script src="main.js"></script>
+    <script src="main.js">
+        // Función para abrir y cerrar el menú
+function abrir_cerrar_menu() {
+    let menu = document.getElementById('menu');  // Obtiene el menú
+    let boton = document.getElementById('x');    // Obtiene el botón
+
+    // Alterna la clase 'abrir_menu' (muestra/oculta el menú)
+    menu.classList.toggle('abrir_menu');
+
+    // Alterna la clase 'colocar_x' (cambia el icono del botón a 'X')
+    boton.classList.toggle('colocar_x');
+}
+
+    </script>
 </body>
 </html>
