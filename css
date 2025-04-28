@@ -93,3 +93,329 @@ nav ul li:hover{background: #f87edb;}
         font-size: 1.6rem;
     }
 }
+nav ul li a {
+    display: block;
+    padding: 10px;
+    color: rgb(159, 247, 255);
+    text-decoration: none;
+    text-align: center;
+    font-size: 1.1rem;
+    transition: all 0.3s ease;
+    transform: scale(1);
+}
+
+/* Cuando pasas el mouse */
+nav ul li a:hover {
+    background: #f87edb;
+    color: #ffffff;
+    transform: scale(1.1);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+@keyframes fadeInDown {
+    0% {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+nav ul li {
+    opacity: 0;
+    animation: fadeInDown 0.8s forwards;
+}
+
+/* Añadimos delay diferente a cada botón para el efecto cascada */
+nav ul li:nth-child(1) {
+    animation-delay: 0.1s;
+}
+nav ul li:nth-child(2) {
+    animation-delay: 0.3s;
+}
+nav ul li:nth-child(3) {
+    animation-delay: 0.5s;
+}
+nav ul li:nth-child(4) {
+    animation-delay: 0.7s;
+}
+/* Reiniciar márgenes y paddings por defecto */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilo básico para el body */
+body {
+    font-family: 'Arial', sans-serif;
+    background-image: url("C:/Users/crist/OneDrive/Desktop/paginaweb/fondo.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    color: rgb(159, 247, 255); /* Celeste en todo el texto del body */
+}
+
+/* Estilo para el encabezado */
+header {
+    text-align: center;
+    padding: 50px 0;
+}
+
+header h1 {
+    font-size: 2.5rem;
+    color: #e2b5fa; /* Mantén el título en color púrpura */
+    margin-bottom: 20px;
+}
+
+header p {
+    font-size: 1.2rem;
+    margin-top: 10px;
+    color: #c6895d; /* Celeste para el texto del párrafo */
+}
+
+/* Estilos para la barra de navegación */
+.barras {
+    display: none;
+}
+
+nav {
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+    background-color: #e2abff;
+}
+
+nav ul li {
+    list-style: none;
+    margin: 0 20px;
+}
+
+nav ul li a {
+    color: rgb(159, 247, 255); /* Celeste para los enlaces */
+    text-decoration: none;
+    font-size: 1.2rem;
+    text-align: center;
+}
+
+nav ul li a:hover {
+    color: #fff;
+    background-color: #f87edb;
+    padding: 10px 20px;
+    border-radius: 5px;
+}
+
+/* Estilos para la galería */
+.galeria {
+    background-image: url("C:/Users/crist/OneDrive/Desktop/paginaweb/IMG/fondo2.jpg");   
+    background: rgba(0, 0, 0, 0.5);  
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    padding: 30px;
+    justify-items: center;
+}
+
+.galeria .foto img {
+    width: 100%;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease;
+}
+
+.galeria .foto img:hover {
+    transform: scale(1.05);
+}
+
+.galeria .foto p {
+    text-align: center;
+    margin-top: 10px;
+    font-size: 1.1rem;
+    color: #87CEEB;
+}
+
+/* Estilo del footer */
+footer {
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.8);
+    color: #fff;
+    padding: 10px;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+
+/* Estilos del formulario de contacto */
+form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 500px;
+    margin: 30px auto;
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 20px;
+    border-radius: 10px;
+}
+
+form label {
+    font-size: 1rem;
+    margin-bottom: 10px;
+    color: #87CEEB; /* Celeste para las etiquetas del formulario */
+}
+
+form input, form textarea {
+    padding: 10px;
+    margin-bottom: 20px;
+    font-size: 1rem;
+    border-radius: 5px;
+    border: 1px solid #fff;
+    background-color: rgba(255, 255, 255, 0.3);
+    color: #fff;
+}
+
+form button {
+    padding: 10px;
+    background-color: #d699f8;
+    color: #fff;
+    font-size: 1.2rem;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+form button:hover {
+    background-color: #f87edb;
+}
+
+/* Estilo para la sección de servicios */
+section {
+    padding: 50px 0;
+    text-align: center;
+}
+
+section h2 {
+    font-size: 2rem;
+    color: #d699f8;
+    margin-bottom: 20px;
+}
+
+section p {
+    font-size: 1.1rem;
+    color: #87CEEB; /* Celeste para la descripción de los servicios */
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin-top: 20px;
+}
+
+ul li {
+    font-size: 1.2rem;
+    color: #87CEEB; /* Celeste para los elementos de la lista */
+}
+
+/* Estilos de Responsividad */
+
+/* Para dispositivos móviles */
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+    }
+
+    .galeria {
+        grid-template-columns: 1fr;
+    }
+
+    header h1 {
+        font-size: 2rem;
+    }
+
+    footer {
+        position: relative;
+    }
+}
+.inicio{
+    background-image: url("C:/Users/crist/OneDrive/Desktop/paginaweb/IMG/fondo2.jpg");    
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    padding: 30px;
+    justify-items: center;
+}
+/* Estilos para el encabezado */
+header {
+    text-align: center;
+    padding: 50px 20px;
+    margin-bottom: 30px;
+}
+
+header h1 {
+    font-size: 3rem;
+    color: #d699f8; /* Color celeste para el título */
+    margin-bottom: 10px;
+}
+
+header p {
+    font-size: 1.2rem;
+    color: #87CEEB; /* Color celeste para el subtítulo */
+}
+
+/* Estilos para la sección de servicios */
+section {
+    text-align: center;
+    padding: 30px;
+   
+    margin-bottom: 30px;
+}
+
+section h2 {
+    font-size: 2.5rem;
+    color: #d699f8; /* Color celeste para los subtítulos */
+    margin-bottom: 15px;
+}
+
+section p {
+    font-size: 1.2rem;
+    color: #87CEEB; /* Color celeste para el texto */
+    margin-bottom: 20px;
+}
+
+section ul {
+    list-style: none;
+    padding: 0;
+}
+
+section ul li {
+    font-size: 1.2rem;
+    color: #c04ec4; /* Color blanco para los ítems de la lista */
+    margin: 10px 0;
+}
+
+/* Estilos para el pie de página */
+footer {
+    text-align: center;
+    padding: 20px;
+    background: rgba(0, 0, 0, 0.8); /* Fondo oscuro */
+    color: #c04ec4; /* Color blanco para el texto del pie de página */
+}
+
+/* Responsividad para pantallas más pequeñas */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 2.5rem; /* Ajuste para pantallas más pequeñas */
+    }
+
+    section h2 {
+        font-size: 2rem; /* Ajuste para subtítulos en pantallas más pequeñas */
+    }
+
+    section p, section ul li {
+        font-size: 1rem; /* Ajuste para el tamaño de los párrafos e ítems en pantallas más pequeñas */
+    }
+}
